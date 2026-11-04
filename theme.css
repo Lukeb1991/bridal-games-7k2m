@@ -83,7 +83,7 @@ body::before{
 /* ---------- lace trim along the top edge of every page ---------- */
 body::after{
   content:"";
-  position:fixed; top:0; left:0; right:0;
+  position:absolute; top:0; left:0; right:0;   /* scrolls away with the page (was fixed, which sat on top of the text) */
   height:24px;
   background:url('lace-edge.svg') repeat-x 0 0 / 40px 24px;
   z-index:5;
