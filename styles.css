@@ -76,6 +76,7 @@ body{
   color:var(--ink);
   font-family:var(--font-body);
   min-height:100vh;
+  min-height:100dvh;   /* phones: the VISIBLE screen height - plain 100vh includes the hidden browser toolbars, which made the games scroll a little for no reason */
   position:relative;
   overflow-x:hidden;
   -webkit-text-size-adjust:100%;
